@@ -67,8 +67,8 @@ void enlarge(HashMap * map) {
             insertMap(map, oldBuckets[i]->key, oldBuckets[i]->value);
         }
     }
+    free(oldBuckets);
 }
-
 
 
 HashMap * createMap(long capacity) {
